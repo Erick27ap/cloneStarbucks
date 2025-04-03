@@ -1,3 +1,24 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../fonts/SoDoSans-SemiBold.woff');
+    font-weight: 600;
+    font-style: normal;
+}
 /* Mini reset */
 *{
     margin: 0; /*espaçamento/ distancia da borda para fora*/
@@ -5,6 +26,8 @@
     border: 0; 
     /*utiliza espaço interno mantem tamanho width e height*/
     box-sizing: border-box; /*kdos*/
+    /*font-family: "nunito", sans-serif;*/
+    font-family: "Sodo Sans", "ellograph-cf", monospace;
 }
 
 /*
@@ -143,27 +166,73 @@ body{
     object-fit: cover;
 }
 /* FOOTER - INICIO */
+
 .footer-area {
- 
+    width: 100vw;
+    height: 665px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 50px;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -1px 6px -6px #222;
+    flex-direction: row;
 }
 .footer-content {
- 
+    width: 90%;
 }
 .footer-row {
- 
+    height: auto;
+    width: 100%;
+    gap: 50px;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 .footer-col {
- 
+    width: 180px;
 }
 .col-title {
- 
+    font-size: 1.8rem;
+    line-height: 1.41;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
 }
 .footer-col ul {
- 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    width: 100%;
 }
 .footer-col li {
-   
+    list-style-type: none;
+    width: 100%;
 }
 .footer-col li a {
-   
+    width: 180px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.56);
+}
+.separator{
+    width: 100%;
+    height:2px;
+    background-color:#222;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.footer-col i{
+    font-size:30px;
+    margin-right: 12px;
+}
+.footer-col a{
+    text-decoration: none;
+    color:#222;
 }
